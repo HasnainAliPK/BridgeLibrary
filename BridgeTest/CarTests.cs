@@ -25,5 +25,12 @@ namespace Bridge.Test
             var car = new Car();
             Assert.AreEqual("Car", car.VehicleType());
         }
+
+        [TestMethod]
+        public void Licenseplate_ThrowsException_WhenTooLong()
+        {
+            var car = new Car();
+            Assert.ThrowsException<ArgumentException>(() => car.Licenseplate = "ABCDEFGH");
+        }
     }
 }
