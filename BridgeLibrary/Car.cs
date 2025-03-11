@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace BridgeLibrary
 {
-    public class Car
+    public class Car : Vehicle
     {
-        public string LicensePlate { get; private set; }
-        public DateTime Date { get; private set; }
-
-        public double Price()
+        public override double Price()
         {
             return 230;
         }
 
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "Car";
         }
