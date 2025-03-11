@@ -9,21 +9,20 @@ using BridgeLibrary;
 namespace Bridge.Test
 {
     [TestClass]
-    public class CarTests
+    public class MCTests
     {
-
         [TestMethod]
-        public void Price_ShouldReturn230() 
+        public void Price_ShouldReturn120()
         {
-            var car = new Car();
-            Assert.AreEqual(230, car.Price());
+            var mc = new MC();
+            Assert.AreEqual(120, mc.Price());
         }
 
         [TestMethod]
-        public void VehicleType_ShouldReturnCar()
-        { 
-            var car = new Car();
-            Assert.AreEqual("Car", car.VehicleType());
+        public void VehicleType_ShouldReturnMC()
+        {
+            var mc = new MC();
+            Assert.AreEqual("MC", mc.VehicleType());
         }
     }
 }
